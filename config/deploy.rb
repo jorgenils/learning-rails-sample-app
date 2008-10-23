@@ -1,12 +1,13 @@
 set :application, "learningrails"
 set :deploy_to, "/var/www/apps/#{application}"
 
-role :app, "sampleapp.learningrails.com"
-role :web, "sampleapp.learningrails.com"
-role :db,  "sampleapp.learningrails.com", :primary => true
+role :app, "192.168.1.104"
+role :web, "192.168.1.104"
+role :db,  "192.168.1.104", :primary => true
 
 default_run_options[:pty] = true
-set :repository,  "git://github.com/mzslater/learning-rails-sample-app.git"
+# set :repository,  "git://github.com/mzslater/learning-rails-sample-app.git"
+set :repository,  "git://github.com/bruparel-test/learning-rails-sample-app.git"
 set :scm, "git"
 set :branch, "master"
 set :deploy_via, :remote_cache

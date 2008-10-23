@@ -15,7 +15,9 @@ test:
 
 production:
     adapter: mysql
+    encoding: utf8
     database: learningrails_production
-    username: deploy
-    password: secret
+    username: root
+    password: 
     host: localhost
+    socket: /var/run/mysqld/mysqld.sock
